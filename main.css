@@ -1,0 +1,101 @@
+:root {
+    --primary-white: #ffffff;
+    --primary-black: #000000;
+    --primary-main: #617DFF;
+    --secondary-gray: #A2B2FC;
+    --secondary-pink: #E378CC;
+    --secondary-red: #FF6960;
+  
+    --gradient-blue: linear-gradient(90deg, #617DFF 0%, #A2B2FC 100%);
+    --gradient-pink: linear-gradient(90deg, #E378CC 0%, #FF6960 100%);
+    --gradient-mix: linear-gradient(90deg, #617DFF 0%, #FF6960 100%);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: var(--primary-white);
+    color: var(--primary-black);
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: var(--primary-white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--primary-black);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: var(--primary-main);
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 80vh;
+    background: var(--gradient-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .hero-content {
+    text-align: center;
+    max-width: 700px;
+    color: var(--primary-white);
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: var(--secondary-gray);
+  }
+  
+  .hero button {
+    padding: 12px 28px;
+    font-size: 16px;
+    background: var(--gradient-pink);
+    color: var(--primary-white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .hero button:hover {
+    background: var(--gradient-mix);
+  }
+  
